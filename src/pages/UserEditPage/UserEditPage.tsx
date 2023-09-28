@@ -162,7 +162,7 @@ export const UserEditPage = ({ id }: IUserEditPageProps) => {
       <>
         <Breadcrumbs
           withSave
-          title="Todo list"
+          title="User list"
           subtitle="Profile"
           onSave={beginSave}
           onBack={() => history.push("/users")}

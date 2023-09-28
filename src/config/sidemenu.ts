@@ -17,16 +17,6 @@ export const sidemenu: IScaffold2Group[] = [
         icon: HomeIcon,
       },
       {
-        label: "Todo list (decl)",
-        id: "todos_list",
-        icon: PlaylistAddCheckIcon,
-      },
-      {
-        label: "Todo list (rad)",
-        id: "todos_card",
-        icon: PlaylistAddCheckIcon,
-      },
-      {
         label: "Users list",
         id: "users_list",
         icon: PeopleIcon,

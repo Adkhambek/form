@@ -1,10 +1,6 @@
 import { ISwitchItem } from "react-declarative";
 
 import DashboardPage from "../pages/DashboardPage";
-import TodoListPage from "../pages/TodoListPage";
-import TodoOnePage from "../pages/TodoOnePage";
-import TodoCardPage from "../pages/TodoCardPage";
-import TodoRecordPage from "../pages/TodoRecordPage";
 import UserListPage from "../pages/UserListPage";
 
 import ErrorPage from "../pages/ErrorPage";
@@ -24,26 +20,6 @@ export const routes: IRouteItem[] = [
     path: "/dashboard",
     sideMenu: "root.example_pages.dashboard",
     element: DashboardPage,
-  },
-  {
-    path: "/todos_list",
-    sideMenu: "root.example_pages.todos_list",
-    element: TodoListPage,
-  },
-  {
-    path: "/todos_list/:id",
-    sideMenu: "root.example_pages.todos_list",
-    element: TodoOnePage,
-  },
-  {
-    path: "/todos_card",
-    sideMenu: "root.example_pages.todos_card",
-    element: TodoCardPage,
-  },
-  {
-    path: "/todos_card/:id",
-    sideMenu: "root.example_pages.todos_card",
-    element: TodoRecordPage,
   },
   {
     path: "/users",
