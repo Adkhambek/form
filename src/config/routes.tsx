@@ -8,6 +8,7 @@ import TodoRecordPage from "../pages/TodoRecordPage";
 import UserListPage from "../pages/UserListPage";
 
 import ErrorPage from "../pages/ErrorPage";
+import UserEditPage from "../pages/UserEditPage";
 
 interface IRouteItem extends ISwitchItem {
   sideMenu: string;
@@ -48,6 +49,11 @@ export const routes: IRouteItem[] = [
     path: "/users",
     sideMenu: "root.example_pages.users_list",
     element: UserListPage,
+  },
+  {
+    path: "/users/:id",
+    sideMenu: "root.example_pages.users_list",
+    element: UserEditPage,
   },
   {
     path: "/error-page",
