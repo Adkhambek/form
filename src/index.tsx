@@ -15,8 +15,6 @@ import "./polyfills";
 
 import App from "./components/App";
 
-import worker from "./mocks";
-
 import THEME_DARK from "./config/theme";
 
 import history, { handleGlobalError } from "./helpers/history";
