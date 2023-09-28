@@ -5,6 +5,7 @@ import TodoListPage from "../pages/TodoListPage";
 import TodoOnePage from "../pages/TodoOnePage";
 import TodoCardPage from "../pages/TodoCardPage";
 import TodoRecordPage from "../pages/TodoRecordPage";
+import UserListPage from "../pages/UserListPage";
 
 import ErrorPage from "../pages/ErrorPage";
 
@@ -44,6 +45,11 @@ export const routes: IRouteItem[] = [
     element: TodoRecordPage,
   },
   {
+    path: "/users",
+    sideMenu: "root.example_pages.users_list",
+    element: UserListPage,
+  },
+  {
     path: "/error-page",
     sideMenu: "",
     element: ErrorPage,
@@ -56,6 +62,7 @@ export const routes: IRouteItem[] = [
 ];
 
 export const sideMenuClickMap: Record<string, string> = {
+  "root.example_pages.users_list": "/users",
   "root.example_pages.todos_list": "/todos_list",
   "root.example_pages.todos_card": "/todos_card",
   "root.example_pages.dashboard": "/dashboard",

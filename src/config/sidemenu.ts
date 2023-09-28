@@ -3,6 +3,7 @@ import { IScaffold2Group } from "react-declarative";
 import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheckOutlined";
 import PublicIcon from "@mui/icons-material/Public";
 import HomeIcon from "@mui/icons-material/Home";
+import PeopleIcon from "@mui/icons-material/People";
 
 export const sidemenu: IScaffold2Group[] = [
   {
@@ -24,6 +25,11 @@ export const sidemenu: IScaffold2Group[] = [
         label: "Todo list (rad)",
         id: "todos_card",
         icon: PlaylistAddCheckIcon,
+      },
+      {
+        label: "Users list",
+        id: "users_list",
+        icon: PeopleIcon,
       },
     ],
   },

@@ -33,7 +33,7 @@ export const fetchApi = async <T = any>(
   const sessionId =
     authStorageManager.getValue() || authSessionManager.getValue();
   try {
-    return await fetchApiInternal<T>(input, {
+    return await fetchApiInternal<T>("http://localhost:8080" + input, {
       ...init,
       headers: {
         ...init?.headers,

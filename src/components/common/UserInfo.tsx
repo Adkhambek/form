@@ -14,7 +14,7 @@ export const UserInfo = () => (
         }}
       />
     </Grid>
-    <Grid item xs>
+    <Grid item>
       <Stack justifyContent="center" height="100%">
         <Typography>Anonymous</Typography>
       </Stack>
